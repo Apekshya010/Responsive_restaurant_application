@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>My website</title>
+    <link rel="stylesheet" href="./styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="header">
+        <div class="app_name">
+            <img src="./images/logo.jpg"/>
+            Asian Bay
+        </div> 
+        <div class="sub-header">
+            <a href="#home">Home</a>
+            <a href="#menu">Menu</a>
+            <a href="#services">Services</a>
+            <a href="#contacts">Contacts</a>
+        </div>
+    </div>
+
+    <div class="main">
+        <div class="cover" id="home">
+            Welcome to Asian Bay.
+            <p class="slogan">Taste the Best.</p>
+            <button><a href="#contacts">Make Reservations</a></button>
+        </div>
+        
+        <div class="container first" >
+            <div class="column1">
+                <h3>About us</h3>
+                <p class="large">We cook the best tasty food.</p>
+                <p>We cook the best food in the entire city, with excellent customer service, the best meals and at the best price, do visit us.</p>
+            </div>
+            <div class="column2">
+                <img src="./images/about.jpg" alt="about">
+            </div>
+        </div >
+
+        <div id="menu">
+            <h3>Menu</h3>
+            <div class="menu-container" >
+                <div class="section">
+                    <img src="./images/momo.jpg" alt="momo"/>
+                    <div class="food-details">
+                        <p>Momo</p>
+                        <p>$5.00</p>
+                        <p class="addtocart">Add to cart</p>
+                    </div>
+                </div>
+                <div class="section">
+                    <img src="./images/nasigoreng.jpg" alt="nasigoreng"/>
+                    <div class="food-details">
+                        <p>Nasi Goreng</p>
+                        <p>$8.50</p>
+                        <p class="addtocart">Add to cart</p>
+                    </div>
+                </div>
+                <div class="section">
+                    <img src="./images/pho.jpg" alt="pho"/>
+                    <div class="food-details">
+                        <p>Pho</p>
+                        <p>$7.25</p>
+                        <p class="addtocart">Add to cart</p>
+                    </div>
+                </div>
+                <div class="section">
+                    <img src="./images/ramen.jpg" alt="ramen"/>
+                    <div class="food-details">
+                        <p>Tonkatsu Ramen</p>
+                        <p>$8.45</p>
+                        <p class="addtocart">Add to cart</p>
+                    </div>
+                </div>
+                <div class="section">
+                    <img src="./images/pekingduck.jpg" alt="pekingduck"/>
+                    <div class="food-details">
+                        <p>Peking Duck</p>
+                        <p>$10</p>
+                        <p class="addtocart">Add to cart</p>
+                    </div>
+                </div>
+                <div class="section">
+                    <img src="./images/teokbokki.jpg" alt="teokbokki"/>
+                    <div class="food-details">
+                        <p>Teokbokki</p>
+                        <p>$5.30</p>
+                        <p class="addtocart">Add to cart</p>
+                    </div>
+                </div>
+                <div class="section">
+                    <img src="./images/thaigreencurry.jpg" alt="thaigreencurry"/>
+                    <div class="food-details">
+                        <p>Thai Green Curry</p>
+                        <p>$6.80</p>
+                        <p class="addtocart">Add to cart</p>
+                    </div>
+                </div>
+                <div class="section">
+                    <img src="./images/biriyani.jpg" alt="biriyani"/>
+                    <div class="food-details">
+                        <p>Biriyani</p>
+                        <p>$6.00</p>
+                        <p class="addtocart">Add to cart</p>
+                    </div>
+                </div>
+                <div class="section">
+                    <img src="./images/springroll.jpg" alt="springroll"/>
+                    <div class="food-details">
+                        <p>Spring Roll</p>
+                        <p>$5.50</p>
+                        <p class="addtocart">Add to cart</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="services">
+            <h3>Services</h3>
+            <div class="service-container" >
+                <div class="section">
+                    <i class="fa-solid fa-utensils"></i>
+                    <p class="bold">Excellent Food</p>
+                    <p>We offer our clients excellent quality services for many years, with the best and delicious food in the city.</p>
+                </div>
+                <div class="section">
+                    <i class="fa-solid fa-pizza-slice"></i>
+                    <p class="bold">Fast Food</p>
+                    <p>We offer our clients excellent quality services for many years, with the best and delicious food in the city.</p>
+                </div>
+                <div class="section">
+                    <i class="fa-solid fa-truck"></i>
+                    <p class="bold">Delivery</p>
+                    <p>We offer our clients excellent quality services for many years, with the best and delicious food in the city.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container forth" id="contacts">
+            <div class="column1">
+                <h3>Contact us</h3>
+                <p>If you want to reserve a table in our restaurant, contact us and we will attend you quickly, with our 24/7 service.</p>
+            </div>
+            <div class="column2 ">
+                <form>
+                    <label>Name:  <input type="text" placeholder="Enter your name"/></label>
+                    <label>Email:  <input type="email" placeholder="Enter your email"/></label>
+                    <label>Reservations:  <input type="number"/></label>
+                    <label>Reservation date:  <input type="date"/></label>
+                    <label>Feedback:  <textarea></textarea></label>
+                    <button>Send</button>
+                </form>
+            </div>
+        </div> 
+        
+        <div class="footer">
+            <div class="container last">
+                <div class="col">
+                    <p class="bold">Links</p>
+                    <a href="www.facebook.com"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="www.instagram.com"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="www.tiktok.com"><i class="fa-brands fa-tiktok"></i></a>
+                </div>
+                <div class="col">
+                    <p class="bold">Info</p>
+                    <p>Event</p>
+                    <p>Privacy Policy</p>
+                    <p>Terms of Services</p>
+                </div>
+                <div class="col">
+                   <p class="bold"> Address</p>
+                   <p>Patan,Lalitpur</p>
+                   <p>Nepal</p>
+                   <p>+977-98123456xx</p>
+                </div>
+            </div>
+            <div class="copyright">© 2023 Apekshya Shakya. All right reserved</div>
+        </div>
+    </div>
+</body>
+</html>

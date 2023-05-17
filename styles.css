@@ -1,0 +1,245 @@
+body{
+    font-family: 'Courier New', Courier, monospace;
+    margin:0;
+    padding:0;
+}
+
+.header{
+    position:fixed;
+    top:0;
+    z-index: 1;
+    width:100%;
+    text-align: center;
+    color:rgb(211, 9, 9);
+    background: #ffffff;
+    box-shadow: 1px 0px 7px grey;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding:20px;
+}
+.app_name{
+    font-weight: bold;
+    font-size: 1.8rem;
+}
+.app_name img{
+    height:40px;
+    width:40px;
+}
+.sub-header{
+    display:flex;
+    flex-direction: row;
+   justify-content: space-evenly;
+   margin:0 1.5em;
+   font-size: 1.5rem; 
+}
+.sub-header a{
+    text-decoration:none; 
+    padding-left:2rem;
+    cursor:pointer;
+    color:rgb(158, 5, 5);
+}
+a:hover{
+    color:#fa4646;
+}
+/* main page */
+.main{
+    margin-top:4em;
+}
+.container{
+    width:80%;
+    margin:3rem auto;
+    max-width:800px;
+    display:flex;
+    justify-content: space-evenly;
+}
+.cover{
+    text-align: center;
+    font-size: 50px;
+    font-family:'Courier', monospace;
+    color:rgb(251, 248, 248);
+    background-image: url('./images/coverpic.jpg');
+    background-size: 100%;
+    padding:200px 20px;
+}
+.slogan{
+    font-size: 22px;
+    font-weight: bold;
+}
+.main a{
+    color:white;
+    text-decoration: none;
+}
+/* about */
+.first{
+    align-items:center;
+}
+.column1{
+    width:40%;
+}
+.column2{
+    width:45%;
+}
+h3{
+    font-size: 1.5rem;
+    color:rgb(211, 9, 9);
+}
+.large{
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 2px;
+}
+.container .column2 img{
+    width:100%;
+    min-height:250px;
+    border-radius: 5px;
+    object-fit:cover;
+}
+
+/* menu */
+#menu,#services{
+    text-align:center;
+    margin:10rem 0;
+}
+#menu i{
+    display:inline block;
+}
+.menu-container{
+    width:80%;
+    padding:5px;
+    margin:3rem auto;
+    max-width:800px;
+    display:grid;
+    grid-template-columns:repeat(9,250px);
+    grid-gap:1.6rem;
+    overflow-x: scroll;
+}
+.menu-container::-webkit-scrollbar{
+    background: white;
+    height:8px;
+    box-shadow:2px 2px 5px #aeacac;
+}
+.menu-container::-webkit-scrollbar-thumb{
+    background-color: rgb(208, 39, 39);
+    border-radius: 50px;
+}
+.menu-container .section{
+    width:auto;
+    padding:10px;
+    border-radius: 5px;
+    box-shadow: 3px 3px 5px rgb(137, 134, 134);
+}
+.menu-container .section img{
+    width:100%;
+    height:180px;
+    object-fit: cover;
+}
+.food-details{
+    font-weight: bold;
+}
+.food-details p{
+    margin-bottom: 0;
+}
+.addtocart{
+    background-color: rgb(208, 39, 39);
+    color:white;
+    padding:10px 5px;
+}
+.addtocart:hover{
+    background-color: #a01c1c;
+    cursor:pointer;
+}
+
+/* services */
+.service-container{
+    width:80%;
+    margin:3rem auto;
+    max-width:800px;
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,auto));
+    grid-gap:20px;
+}
+.service-container .section i{
+    font-size: 40px;
+    color:rgb(211, 9, 9);
+}
+
+/* contacts */
+form{
+    margin-top:50px;
+    width:100%;
+}
+label{
+   
+    font-size: 1.2rem;
+    font-weight: bold;
+    color:rgb(158, 5, 5);
+    margin:0.5em;
+    display:block;
+}
+input,textarea{
+    padding:0.5em;
+    font-weight: bold;
+    border:2px solid rgb(158, 5, 5);
+    width:100%;
+}
+button{
+     margin:0.5em;
+    width:auto;
+    font-size:1.2rem;
+    font-weight: bold;
+    color:white;
+    background-color: rgb(158, 5, 5);
+    padding:0.5em;
+    border: none;
+    border-radius: 5px;
+    cursor:pointer;
+}
+button:hover{
+    background-color: rgba(214, 13, 13, 0.73);
+}
+.forth{
+    align-items: start;
+}
+
+/* footer */
+.footer{
+    background-color: rgb(184, 6, 6);
+    color:white;
+}
+.last{
+   
+    align-items: baseline;
+}
+.col{
+    width:30%;
+}
+.col i{
+    font-size: 20px;
+    color:white;
+    padding:5px;
+}
+.copyright{
+    text-align: center;
+    font-size: 0.9rem;
+    padding:1.5rem;
+}
+.bold{
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+
+@media (max-width:630px){
+    .container{
+        width:90%;
+    }
+    .header{
+        flex-direction: column;
+    }
+    .sub-header{
+        flex-direction: column;
+        margin-top:20px;
+    }
+}
+
